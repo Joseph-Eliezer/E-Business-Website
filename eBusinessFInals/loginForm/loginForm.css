@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Kaithi&display=swap");
+
+HTML {
+  scroll-behavior: smooth;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Noto Sans Kaithi", sans-serif;
+  overflow-x: hidden;
+  background: rgb(81, 144, 208);
+  background: linear-gradient(
+    90deg,
+    rgba(81, 144, 208, 1) 0%,
+    rgba(153, 199, 249, 1) 100%
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  margin: 0;
+  width: 100%;
+}
+
+header {
+  height: 15%;
+  width: 100%;
+  background-color: transparent;
+  border-bottom: 1px solid rgb(223, 223, 223);
+  position: fixed;
+}
+.header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar a {
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  font-weight: 300;
+  text-decoration: none;
+  position: relative;
+  margin-left: 30px;
+  align-items: center;
+  display: flex;
+  transition: 0.3s all ease;
+  -ms-flex-align: start;
+}
+
+.navbar a:hover {
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 10px;
+}
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 430px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 7px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+.container .registration {
+  display: none;
+}
+#check:checked ~ .registration {
+  display: block;
+}
+#check:checked ~ .login {
+  display: none;
+}
+#check {
+  display: none;
+}
+.container .form {
+  padding: 2rem;
+}
+.form header {
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.form input {
+  height: 60px;
+  width: 100%;
+  padding: 0 15px;
+  font-size: 17px;
+  margin-bottom: 1.3rem;
+  border: 1px solid #725050;
+  border-radius: 6px;
+  outline: none;
+}
+.form input:focus {
+  box-shadow: 0 1px 0 rgba(167, 136, 136, 0.2);
+}
+.form a {
+  font-size: 16px;
+  color: #ffffff;
+  text-decoration: none;
+}
+.form a:hover {
+  text-decoration: underline;
+}
+.form input.button {
+  color: #ffffff;
+  background: rgb(59, 115, 171);
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-top: 1.7rem;
+  cursor: pointer;
+  border: none;
+  transition: 0.4s;
+}
+.form input.button:hover {
+  background: transparent;
+  border: 1px solid white;
+}
+.signup {
+  font-size: 17px;
+  text-align: center;
+}
+.signup label {
+  color: rgb(59, 115, 171);
+  cursor: pointer;
+}
+.signup label:hover {
+  text-decoration: underline;
+}
